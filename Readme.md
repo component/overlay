@@ -1,31 +1,22 @@
 
-# Emitter
+# Overlay
 
-  Event emitter component.
-
-## Installation
-
-```
-$ npm install emitter-component
-```
+  Page overlay component.
 
 ## API
-  
-### Emitter#on(event, fn)
 
-  Register an `event` handler `fn`.
+### overlay([options])
 
-### Emitter#once(event, fn)
+  Returns a new `Overlay`.
 
-  Register a single-shot `event` handler `fn`,
-  removed immediately after it is invoked the
-  first time.
+  Options:
 
-### Emitter#off(event, fn)
+  - `closable`: whether or not a user may click the overlay to close [__false__]
 
-  Remove `event` handler `fn`, or pass only the `event`
-  name to remove all handlers for `event`.
+### Overlay#show()
 
-### Emitter#emit(event, ...)
+  Show the overlay.
 
-  Emit an `event` with variable option args.
+### Overlay#hide()
+
+  Hide the overlay.
