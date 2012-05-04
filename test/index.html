@@ -1,0 +1,32 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Overlay</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="out.css" />
+  </head>
+  <body>
+    <title>Overlay</title>
+    <script src="out.js"></script>
+    <script>
+    var overlay = require('overlay');
+
+    var o = overlay()
+    .show()
+    .on('hide', function(){
+      console.log('hidden');
+      setTimeout(function(){
+        overlay({ closable: true })
+        .show()
+        .on('hide', function(){
+          console.log('hidden 2');
+        });
+      }, 500);
+    });
+
+    setTimeout(function(){
+      o.hide();
+    }, 1000);
+    </script>
+  </body>
+</html>
