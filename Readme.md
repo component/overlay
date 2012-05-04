@@ -3,6 +3,12 @@
 
   Page overlay component.
 
+## Installation
+
+```
+$ npm install overlay-component
+```
+
 ## API
 
 ### overlay([options])
