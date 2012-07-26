@@ -26,3 +26,7 @@ $ npm install overlay-component
 ### Overlay#hide()
 
   Hide the overlay.
+
+## License
+
+  MIT
