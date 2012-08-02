@@ -10,7 +10,7 @@
   "component": {
     "styles": ["overlay.css"],
     "scripts": {
-      "overlay": "overlay.js"
+      "overlay": "index.js"
     },
     "templates": {
       "overlay": "overlay.html"

@@ -1,0 +1,13 @@
+{
+  "name": "overlay",
+  "description": "Overlay component",
+  "version": "0.0.1",
+  "keywords": ["overlay", "ui"],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/jquery": "*"
+  },
+  "scripts": ["index.js"],
+  "styles": ["overlay.css"],
+  "templates": ["overlay.html"]
+}
