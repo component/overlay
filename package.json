@@ -1,7 +1,7 @@
 {
   "name": "overlay-component",
   "description": "Page overlay component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["component", "overlay"],
   "dependencies": {
     "emitter-component": "*",
