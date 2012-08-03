@@ -4,7 +4,7 @@
  */
 
 var Emitter = require('emitter')
-  , $ = require('jquery');
+  , o = require('jquery');
 
 /**
  * Expose `overlay()`.
@@ -41,7 +41,7 @@ function Overlay(options) {
   Emitter.call(this);
   options = options || {};
   this.closable = options.closable;
-  this.el = $(render('overlay'));
+  this.el = o(render('overlay'));
   this.el.appendTo('body');
   if (this.closable) this.el.click(this.hide.bind(this));
 }
