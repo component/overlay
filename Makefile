@@ -1,5 +1,5 @@
 
-test/out.js: overlay.js overlay.css
+test/out.js: index.js overlay.css
 	component build package.json test/out
 
 clean:

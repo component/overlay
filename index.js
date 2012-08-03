@@ -39,16 +39,11 @@ function overlay(options){
 
 function Overlay(options) {
   Emitter.call(this);
-  var self = this;
   options = options || {};
   this.closable = options.closable;
   this.el = $(render('overlay'));
   this.el.appendTo('body');
-  if (this.closable) {
-    this.el.click(function(){
-      self.hide();
-    });
-  }
+  if (this.closable) this.el.click(this.hide.bind(this));
 }
 
 /**
@@ -62,7 +57,7 @@ Overlay.prototype.__proto__ = Emitter.prototype;
  *
  * Emits "show" event.
  *
- * @return {Overlay} for chaining
+ * @return {Overlay} 
  * @api public
  */
 
@@ -77,16 +72,31 @@ Overlay.prototype.show = function(){
  *
  * Emits "hide" event.
  *
- * @return {Overlay} for chaining
+ * @return {Overlay}
  * @api public
  */
 
 Overlay.prototype.hide = function(){
-  var self = this;
   this.emit('hide');
+  return this.remove();
+};
+
+/**
+ * Hide the overlay without emitting "hide".
+ *
+ * Emits "close" event.
+ *
+ * @return {Overlay}
+ * @api public
+ */
+
+Overlay.prototype.remove = function(){
+  var self = this;
+  this.emit('close');
   this.el.addClass('hide');
   setTimeout(function(){
     self.el.remove();
   }, 2000);
   return this;
 };
+
