@@ -7,7 +7,6 @@
     "component/emitter": "*",
     "component/jquery": "*"
   },
-  "scripts": ["index.js"],
-  "styles": ["overlay.css"],
-  "templates": ["overlay.html"]
+  "scripts": ["index.js", "template.js"],
+  "styles": ["overlay.css"]
 }
