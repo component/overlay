@@ -1,4 +1,3 @@
-
 # Overlay
 
   Page overlay component.
@@ -26,6 +25,13 @@ $ npm install overlay-component
 ### Overlay#hide()
 
   Hide the overlay.
+
+## Events
+
+  - `show` when the overlay is shown
+  - `hide` when the overlay is hidden
+  - `close` when the overlay is removed (follows hide normally)
+
 
 ## License
 
