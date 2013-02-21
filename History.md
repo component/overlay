@@ -1,4 +1,9 @@
 
+0.0.4 / 2013-02-21 
+==================
+
+  * change from __proto__ to inherit to make it work on ie
+
 0.0.3 / 2012-09-21 
 ==================
 

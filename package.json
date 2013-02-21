@@ -1,9 +1,10 @@
 {
   "name": "overlay-component",
   "description": "Overlay component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": ["overlay", "ui"],
   "dependencies": {
+    "inherit-component": "*",
     "emitter-component": "*",
     "jquery-component": "*"
   },
