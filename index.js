@@ -4,6 +4,7 @@
  */
 
 var Emitter = require('emitter')
+  , inherit = require('inherit')
   , o = require('jquery');
 
 /**
@@ -50,7 +51,7 @@ function Overlay(options) {
  * Inherits from `Emitter.prototype`.
  */
 
-Overlay.prototype.__proto__ = Emitter.prototype;
+inherit(Overlay, Emitter);
 
 /**
  * Show the overlay.
