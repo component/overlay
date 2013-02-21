@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "component/emitter": "*",
+    "component/inherit": "*",
     "component/jquery": "*"
   },
   "scripts": [
