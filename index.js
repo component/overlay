@@ -22,12 +22,19 @@ exports.Overlay = Overlay;
 /**
  * Return a new `Overlay` with the given `options`.
  *
- * @param {Object} options
+ * @param {Object|Element} options
  * @return {Overlay}
  * @api public
  */
 
 function overlay(options){
+  options = options || {};
+
+  // element
+  if (options.nodeName) {
+    options = { target: options };
+  }
+
   return new Overlay(options);
 };
 
@@ -41,9 +48,11 @@ function overlay(options){
 function Overlay(options) {
   Emitter.call(this);
   options = options || {};
+  this.target = options.target || 'body';
   this.closable = options.closable;
   this.el = o(require('./template'));
-  this.el.appendTo('body');
+  if (this.target) this.el.removeAttr('id').addClass('overlay');
+  this.el.appendTo(this.target);
   if (this.closable) this.el.click(this.hide.bind(this));
 }
 
@@ -58,7 +67,7 @@ inherit(Overlay, Emitter);
  *
  * Emits "show" event.
  *
- * @return {Overlay} 
+ * @return {Overlay}
  * @api public
  */
 

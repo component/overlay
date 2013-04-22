@@ -10,13 +10,14 @@ $ npm install overlay-component
 
 ## API
 
-### overlay([options])
+### overlay([options|element])
 
   Returns a new `Overlay`.
 
   Options:
 
   - `closable`: whether or not a user may click the overlay to close [__false__]
+  - `target`: target element to overlay [body]
 
 ### Overlay#show()
 
