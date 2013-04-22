@@ -1,4 +1,10 @@
 
+0.1.0 / 2013-04-22 
+==================
+
+  * add overlay(element) support
+  * remove silly inherit dep
+
 0.0.4 / 2013-02-21 
 ==================
 
