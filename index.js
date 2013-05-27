@@ -3,8 +3,9 @@
  * Module dependencies.
  */
 
-var Emitter = require('emitter')
-  , o = require('jquery');
+var Emitter = require('emitter');
+var tmpl = require('./template');
+var o = require('dom');
 
 /**
  * Expose `overlay()`.
@@ -49,10 +50,9 @@ function Overlay(options) {
   options = options || {};
   this.target = options.target || 'body';
   this.closable = options.closable;
-  this.el = o(require('./template'));
-  if (this.target) this.el.removeAttr('id').addClass('overlay');
+  this.el = o(tmpl);
   this.el.appendTo(this.target);
-  if (this.closable) this.el.click(this.hide.bind(this));
+  if (this.closable) this.el.on('click', this.hide.bind(this));
 }
 
 /**

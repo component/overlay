@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ npm install overlay-component
+$ component install component/overlay
 ```
 
 ## API

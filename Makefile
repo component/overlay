@@ -6,7 +6,7 @@ template.js: template.html
 	@component convert $<
 
 components:
-	@component install
+	@component install -v
 
 clean:
 	rm -fr build components
