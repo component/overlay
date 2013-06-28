@@ -7,6 +7,7 @@
     "ui"
   ],
   "dependencies": {
+    "anthonyshort/after-transition": "0.0.2",
     "component/emitter": "1.0.0",
     "component/dom": "0.7.0"
   },
