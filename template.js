@@ -1,1 +1,1 @@
-module.exports = '<div class="overlay hide"></div>\n';
+module.exports = '<div class="overlay hidden"></div>\n';

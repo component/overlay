@@ -72,7 +72,7 @@ Emitter(Overlay.prototype);
 
 Overlay.prototype.show = function(){
   this.emit('show');
-  this.el.removeClass('hide');
+  this.el.removeClass('hidden');
   return this;
 };
 
@@ -102,7 +102,7 @@ Overlay.prototype.hide = function(){
 Overlay.prototype.remove = function(){
   var self = this;
   this.emit('close');
-  this.el.addClass('hide');
+  this.el.addClass('hidden');
   setTimeout(function(){
     self.el.remove();
   }, 2000);
