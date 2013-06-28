@@ -17,3 +17,7 @@
   pointer-events: none;
   opacity: 0;
 }
+
+.overlay.closable {
+  cursor: pointer;
+}

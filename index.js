@@ -52,7 +52,10 @@ function Overlay(options) {
   this.closable = options.closable;
   this.el = o(tmpl);
   this.el.appendTo(this.target);
-  if (this.closable) this.el.on('click', this.hide.bind(this));
+  if (this.closable) {
+    this.el.on('click', this.hide.bind(this));
+    this.el.addClass('closable');
+  }
 }
 
 /**
