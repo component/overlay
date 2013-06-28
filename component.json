@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "component/emitter": "1.0.0",
-    "component/dom": "0.7.0"
+    "component/dom": "0.7.1"
   },
   "scripts": [
     "index.js",
