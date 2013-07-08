@@ -1,7 +1,7 @@
 {
   "name": "overlay-component",
   "description": "Overlay component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": ["overlay", "ui"],
   "dependencies": {
     "emitter-component": "*",
