@@ -2,7 +2,10 @@
   "name": "overlay-component",
   "description": "Overlay component",
   "version": "0.1.1",
-  "keywords": ["overlay", "ui"],
+  "keywords": [
+    "overlay",
+    "ui"
+  ],
   "dependencies": {
     "emitter-component": "*",
     "jquery-component": "*"
@@ -12,6 +15,12 @@
       "overlay/index.js": "index.js",
       "overlay/template.js": "template.js"
     },
-    "styles": ["overlay.css"]
+    "styles": [
+      "overlay.css"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/overlay.git"
   }
 }
