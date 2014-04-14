@@ -5,10 +5,12 @@
 
 var Emitter = require('emitter');
 var tmpl = require('./template');
-var o = require('dom');
+var domify = require('domify');
+var event = require('event');
+var classes = require('classes');
 
 /**
- * Expose `overlay()`.
+ * Expoifyse `overlay()`.
  */
 
 exports = module.exports = overlay;
@@ -48,11 +50,11 @@ function overlay(options){
 function Overlay(options) {
   Emitter.call(this);
   options = options || {};
-  this.target = options.target || 'body';
+  this.target = options.target || document.body;
   this.closable = options.closable;
-  this.el = o(tmpl);
-  this.el.appendTo(this.target);
-  if (this.closable) this.el.on('click', this.hide.bind(this));
+  this.el = domify(tmpl);
+  this.target.appendChild(this.el);
+  if (this.closable) event.bind(this.el, 'click', this.hide.bind(this));
 }
 
 /**
@@ -72,7 +74,7 @@ Emitter(Overlay.prototype);
 
 Overlay.prototype.show = function(){
   this.emit('show');
-  this.el.removeClass('hide');
+  classes(this.el).remove('hide');
   return this;
 };
 
@@ -102,7 +104,7 @@ Overlay.prototype.hide = function(){
 Overlay.prototype.remove = function(){
   var self = this;
   this.emit('close');
-  this.el.addClass('hide');
+  classes(this.el).add('hide');
   setTimeout(function(){
     self.el.remove();
   }, 2000);
