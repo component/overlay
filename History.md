@@ -1,4 +1,10 @@
 
+0.2.0 / 2014-04-24
+==================
+
+ * use domify and events to replace dom
+ * add repository field to readme
+
 0.1.1 / 2013-07-08 
 ==================
 
