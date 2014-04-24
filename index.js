@@ -10,7 +10,7 @@ var event = require('event');
 var classes = require('classes');
 
 /**
- * Expoifyse `overlay()`.
+ * Expose `overlay()`.
  */
 
 exports = module.exports = overlay;
@@ -38,7 +38,7 @@ function overlay(options){
   }
 
   return new Overlay(options);
-};
+}
 
 /**
  * Initialize a new `Overlay`.
