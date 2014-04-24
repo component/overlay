@@ -1,16 +1,16 @@
 {
   "name": "overlay",
   "description": "Overlay component",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "keywords": [
     "overlay",
     "ui"
   ],
   "dependencies": {
-    "component/emitter": "^1.1.2",
-    "component/domify": "^1.2.2",
-    "component/event": "~0.1.3",
-    "component/classes": "^1.2.1"
+    "component/emitter": "1.1.2",
+    "component/domify": "1.2.2",
+    "component/event": "0.1.3",
+    "component/classes": "1.2.1"
   },
   "scripts": [
     "index.js",
