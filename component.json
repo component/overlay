@@ -13,8 +13,10 @@
     "component/classes": "1.2.1"
   },
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
+  ],
+  "templates": [
+    "template.html"
   ],
   "styles": [
     "overlay.css"

@@ -1,9 +1,6 @@
 
-build: overlay.css index.js template.js components
+build: overlay.css index.js template.html components
 	@component build
-
-template.js: template.html
-	@component convert $<
 
 components:
 	@component install -v

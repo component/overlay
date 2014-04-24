@@ -4,7 +4,7 @@
  */
 
 var Emitter = require('emitter');
-var tmpl = require('./template');
+var tmpl = require('./template.html');
 var domify = require('domify');
 var event = require('event');
 var classes = require('classes');
