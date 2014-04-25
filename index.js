@@ -110,7 +110,7 @@ Overlay.prototype.remove = function(){
   classes(this.el).add('hidden');
   setTimeout(function(){
     self.target.removeChild(self.el);
-  }, 2000);
+  }, 350);
   return this;
 };
 
