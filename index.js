@@ -4,6 +4,7 @@
  */
 
 var Emitter = require('emitter');
+var after = require('after-transition');
 var tmpl = require('./template.html');
 var domify = require('domify');
 var event = require('event');
@@ -106,9 +107,10 @@ Overlay.prototype.hide = function(){
 
 Overlay.prototype.remove = function(){
   var self = this;
+
   this.emit('close');
   classes(this.el).add('hidden');
-  setTimeout(function(){
+  after(this.el, function () {
     self.target.removeChild(self.el);
   }, 2000);
   return this;
