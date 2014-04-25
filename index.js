@@ -74,7 +74,7 @@ Emitter(Overlay.prototype);
 
 Overlay.prototype.show = function(){
   this.emit('show');
-  classes(this.el).remove('hide');
+  classes(this.el).remove('hidden');
   return this;
 };
 
@@ -104,7 +104,7 @@ Overlay.prototype.hide = function(){
 Overlay.prototype.remove = function(){
   var self = this;
   this.emit('close');
-  classes(this.el).add('hide');
+  classes(this.el).add('hidden');
   setTimeout(function(){
     self.target.removeChild(self.el);
   }, 2000);

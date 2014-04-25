@@ -13,7 +13,7 @@
   z-index: 500;
 }
 
-.overlay.hide {
+.overlay.hidden {
   pointer-events: none;
   opacity: 0;
 }
