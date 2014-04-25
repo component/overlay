@@ -1,0 +1,41 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Overlay</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./build/build.css" />
+    <style>
+      body > div:not(.overlay) {
+        position: relative;
+        padding: 15px 25px;
+        border: 1px solid #eee;
+        width: 200px;
+      }
+      body {
+        padding: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <title>Overlay</title>
+    <script src="./build/build.js"></script>
+
+    <div>
+      <h2>Something</h2>
+      <p>Some element here</p>
+    </div>
+
+    <script>
+    var overlay = require('overlay');
+
+    var o = overlay({ closable: true });
+
+    o.on('hide', function(){
+      var div = document.querySelector('body > div');
+      overlay(div).show();
+    });
+
+    o.show();
+    </script>
+  </body>
+</html>
