@@ -1,7 +1,7 @@
 {
   "name": "overlay-component",
   "description": "Overlay component",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "overlay",
     "ui"

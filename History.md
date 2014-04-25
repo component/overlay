@@ -1,4 +1,9 @@
 
+0.3.1 / 2014-04-25
+==================
+
+ * shorten the timeout between hiding and removal (IE fix)
+
 0.3.0 / 2014-04-24
 ==================
 
