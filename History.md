@@ -1,4 +1,10 @@
 
+0.3.0 / 2014-04-24
+==================
+
+ * display pointer cursor when closeable
+ * change "hide" class to "hidden" class
+
 0.2.1 / 2014-04-24
 ==================
 
