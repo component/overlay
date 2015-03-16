@@ -11,11 +11,19 @@
     "event": "component-event",
     "classes": "component-classes"
   },
+  "browserify": {
+    "transform": [
+       "stringify"
+    ]
+  },
   "dependencies": {
     "emitter-component": "*",
     "component-event": "*",
     "domify": "*",
     "component-classes": "*"
+  },
+  "devDependencies": {
+    "stringify": "^3.1.0"
   },
   "component": {
     "scripts": {
