@@ -20,9 +20,7 @@
     "emitter-component": "*",
     "component-event": "*",
     "domify": "*",
-    "component-classes": "*"
-  },
-  "devDependencies": {
+    "component-classes": "*",
     "stringify": "^3.1.0"
   },
   "component": {
