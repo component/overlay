@@ -1,4 +1,9 @@
 
+0.3.5 / 2015-06-01
+==================
+
+ * append overlay element on show instead of on init
+
 0.3.4 / 2015-06-01
 ==================
 
