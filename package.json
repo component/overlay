@@ -1,7 +1,7 @@
 {
   "name": "overlay-component",
   "description": "Overlay component",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "keywords": [
     "overlay",
     "ui"
@@ -13,7 +13,7 @@
   },
   "browserify": {
     "transform": [
-       "stringify"
+      "stringify"
     ]
   },
   "dependencies": {
