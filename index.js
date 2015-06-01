@@ -76,15 +76,15 @@ Emitter(Overlay.prototype);
 
 Overlay.prototype.show = function(){
   var self = this;
-  
+
   this.emit('show');
   this.target.appendChild(this.el);
-  
+
   //class removed in a timeout to save animation
   setTimeout( function () {
   	classes(self.el).remove('hidden');
   });
-  
+
   return this;
 };
 
