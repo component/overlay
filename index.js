@@ -53,7 +53,6 @@ function Overlay(options) {
   this.target = options.target || document.body;
   this.closable = options.closable;
   this.el = domify(tmpl);
-  this.target.appendChild(this.el);
   if (this.closable) {
 	event.bind(this.el, 'click', this.hide.bind(this));
     classes(this.el).add('closable');
@@ -76,8 +75,16 @@ Emitter(Overlay.prototype);
  */
 
 Overlay.prototype.show = function(){
+  var self = this;
+
   this.emit('show');
-  classes(this.el).remove('hidden');
+  this.target.appendChild(this.el);
+
+  //class removed in a timeout to save animation
+  setTimeout( function () {
+  	classes(self.el).remove('hidden');
+  });
+
   return this;
 };
 
