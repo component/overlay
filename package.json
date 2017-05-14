@@ -7,7 +7,7 @@
     "ui"
   ],
   "browser": {
-    "emitter": "emitter-component",
+    "emitter": "component-emitter",
     "event": "component-event",
     "classes": "component-classes"
   },
@@ -17,7 +17,7 @@
     ]
   },
   "dependencies": {
-    "emitter-component": "*",
+    "component-emitter": "*",
     "component-event": "*",
     "domify": "*",
     "component-classes": "*",
