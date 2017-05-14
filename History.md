@@ -1,4 +1,9 @@
 
+0.3.6 / 2017-05-13
+==================
+
+ * deps: component-emitter better than emitter-component
+
 0.3.5 / 2015-06-01
 ==================
 
